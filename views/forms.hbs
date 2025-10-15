@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+
+<h2>Простая форма</h2>
+<div>
+    <form action="/forms" method="post">
+        <input type="text" name="name" id="name">
+        <input type="email" name="email" id="email">
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+<h2>Форма загрузки файла</h2>
+<div>
+    <form action="/uploadFileHandler" method="post" enctype="multipart/form-data">
+        <input type="file" name="uploadedFile" id="uploadedFile">
+        <button type="submit">Загрузить</button>
+    </form>
+</div>
+
